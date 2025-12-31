@@ -11,8 +11,8 @@ npm install
 ### 2. ⚙️ Configuration
 Créer `.env.local`:
 ```env
-NEXT_PUBLIC_API_GATEWAY_URL=http://localhost:8080
-NEXT_PUBLIC_KEYCLOAK_URL=http://localhost:8080
+NEXT_PUBLIC_API_GATEWAY_URL=http://localhost:8088
+NEXT_PUBLIC_KEYCLOAK_URL=http://localhost:8086
 NEXT_PUBLIC_KEYCLOAK_REALM=lms-realm
 NEXT_PUBLIC_KEYCLOAK_CLIENT_ID=lms-frontend
 ```

@@ -22,7 +22,7 @@ cp .env.local.example .env.local
 npm run dev
 ```
 
-L'application sera accessible sur http://localhost:3000
+L'application sera accessible sur http://localhost:3001
 
 ## 🐳 Installation avec Docker
 
@@ -35,8 +35,8 @@ docker build -t lms-frontend .
 ### 2. Lancer le conteneur
 ```bash
 docker run -p 3000:3000 \
-  -e NEXT_PUBLIC_API_GATEWAY_URL=http://localhost:8080 \
-  -e NEXT_PUBLIC_KEYCLOAK_URL=http://localhost:8080 \
+  -e NEXT_PUBLIC_API_GATEWAY_URL=http://localhost:8088 \
+  -e NEXT_PUBLIC_KEYCLOAK_URL=http://localhost:8086 \
   -e NEXT_PUBLIC_KEYCLOAK_REALM=lms-realm \
   -e NEXT_PUBLIC_KEYCLOAK_CLIENT_ID=lms-frontend \
   lms-frontend
